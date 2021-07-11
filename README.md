@@ -11,7 +11,10 @@ docker run -p 25565:25565 modmcs:latest
 
 ## Options
 `MODPACK_ID`: The ID of the modpack to be installed. Defaults to 80 which is Feed the Beast Endeavour. You can get the modpack ID from the download URL on modpacks.ch: https://api.modpacks.ch/public/modpack/*80*/2053/server/linux
+
 `MODPACK_VERSION`: The specific version you want to deploy. Defaults to automatically detecting the latest version. You can also find the version from the downlad URL on modpacks.ch: https://api.modpacks.ch/public/modpack/80/*2053*/server/linux
 
-You may also map a directory to /opt/server (or one of its subdirectories, such as _world_) if you wish (partial) persistence, for example using bind:
+You may also want to map a directory to /opt/server (or one of its subdirectories, such as _world_) if you wish (partial) persistence and easy access to configuration files, for example using bind:
 https://docs.docker.com/storage/bind-mounts/
+
+Restarting the container will by default also update the server.
