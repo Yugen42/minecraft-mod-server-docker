@@ -1,5 +1,8 @@
 #!/bin/bash
 
+RUN apt-get update
+RUN apt-get -y full-upgrade
+
 if [[ -z "${MODPACK_ID}" ]]; then
   MODPACK_ID="80"
 fi
