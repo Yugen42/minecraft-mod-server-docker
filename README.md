@@ -5,8 +5,12 @@ Fetches the latest version of a given modpack installer from modpacks.ch and ins
 
 ## Usage
 ```
-docker build -t modmcs .
-docker run -p 25565:25565 modmcs:latest
+docker build -t minecraft-mod-server-docker .
+docker run -p 25565:25565 minecraft-mod-server-docker:latest
+```
+OR get it from Dockerhub:
+```
+docker pull yugen42/minecraft-mod-server-docker:latest
 ```
 
 ## Options
