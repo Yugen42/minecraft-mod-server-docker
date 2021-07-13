@@ -12,6 +12,10 @@ OR get it from Dockerhub:
 ```
 docker pull yugen42/minecraft-mod-server-docker:latest
 ```
+Full example:
+```
+docker run --mount type=bind,source=/var/minecraft,target=/opt/server -p 25565:25565 -d yugen42/minecraft-mod-server-docker:latest
+```
 
 ## Options
 `MODPACK_ID`: The ID of the modpack to be installed. Defaults to 80 which is Feed the Beast Endeavour. You can get the modpack ID from the download URL on modpacks.ch: https://api.modpacks.ch/public/modpack/*80*/2053/server/linux
